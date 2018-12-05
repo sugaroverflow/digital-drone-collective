@@ -1,5 +1,46 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	div.banner
+		.row
+			.col.s6
+				span.header-image.
+					img.responsive-img(src='/images/groupshot--team.jpg' alt="group picture of ddc team members")
+			.col.s6
+				p Welcome to the
+					h2 Digital Drone Collective
+				p
+					| We are a collaboration between Code for Canada (C4C) and Transport Canada Civil Aviation (CivAv) Remotely Piloted Aircraft Systems Task Force and Digital Services 
+					a(href='https://www.youtube.com/watch?v=WC8VIUN8FzM') tasked to prototype
+					|  digital tools to help drone pilots fly safely and in accordance with new regulations.
+	.container 
+		h2 Connect with us
+		p We believe in working in the open and will actively share our journey with you.
+		.row
+			.col.s4
+				i.fas.fa-plane-departure
+				h3 Follow our journey
+				p For daily updates, photos, and possibly some videos, check out our Tumblr.
+				a(href='https://digitaldronecollective.tumblr.com/')
+					button.action-button 
+					
+			.col.s4
+				i.fas.fa-book-open
+				h3 Read our blogs
+				p For long form, periodic updates on the project, read the Code for Canada blog.
+				a(href='https://medium.com/code-for-canada/')
+					button.action-button Read
+
+			.col.s4
+				i.fas.fa-camera-retro
+				h3 See our photos
+				p Check out our Flickr for a visual story and shared repository of photos of our project.
+				a(href='https://www.flickr.com/photos/digitaldronecollective/')
+					button.action-button See
+	
+
+
+
+		
+
+
