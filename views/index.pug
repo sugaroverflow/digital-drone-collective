@@ -1,12 +1,12 @@
 extends layout
 
 block content
-	div.banner
+	div#banner
 		.row
-			.col.s6
-				span.header-image.
+			.col.s12.m6.l6
+				span.header-image
 					img.responsive-img(src='/images/groupshot--team.jpg' alt="group picture of ddc team members")
-			.col.s6
+			.col.s12.m6.l6
 				p Welcome to the
 					h2 Digital Drone Collective
 				p
@@ -14,30 +14,127 @@ block content
 					a(href='https://www.youtube.com/watch?v=WC8VIUN8FzM') tasked to prototype
 					|  digital tools to help drone pilots fly safely and in accordance with new regulations.
 	.container 
-		h2 Connect with us
-		p We believe in working in the open and will actively share our journey with you.
+		div#connect.center-align
+			h3 Connect with us
+			p We believe in working in the open and will actively share our journey with you.
 		.row
-			.col.s4
-				i.fas.fa-plane-departure
-				h3 Follow our journey
-				p For daily updates, photos, and possibly some videos, check out our Tumblr.
-				a(href='https://digitaldronecollective.tumblr.com/')
-					button.action-button 
+			.col.s12.m6.l4
+				.card.center-align
+					.card-content
+						i.fas.fa-plane-departure
+						h4 Follow our journey
+						p For daily updates, photos, and possibly some videos, check out our Tumblr.
+					.card-action
+						a(href='https://digitaldronecollective.tumblr.com/')
+							button.waves-effect.waves-light.btn Follow
 					
-			.col.s4
-				i.fas.fa-book-open
-				h3 Read our blogs
-				p For long form, periodic updates on the project, read the Code for Canada blog.
-				a(href='https://medium.com/code-for-canada/')
-					button.action-button Read
+			.col.s12.m6.l4
+				.card.center-align
+					.card-content
+						i.fas.fa-book-open
+						h4 Read our blogs
+						p For long form, periodic updates on the project, read the Code for Canada blog.
+					.card-action
+						a(href='https://medium.com/code-for-canada/')
+							button.waves-effect.waves-light.btn Read
 
-			.col.s4
-				i.fas.fa-camera-retro
-				h3 See our photos
-				p Check out our Flickr for a visual story and shared repository of photos of our project.
-				a(href='https://www.flickr.com/photos/digitaldronecollective/')
-					button.action-button See
-	
+			.col.s12.m6.l4
+				.card.center-align
+					.card-content
+						i.fas.fa-camera-retro
+						h4 See our photos
+						p Check out our Flickr for a visual story and shared repository of photos of our project.
+					.card-action
+						a(href='https://www.flickr.com/photos/digitaldronecollective/')
+							button.waves-effect.waves-light.btn See
+
+		div#newsletter.center-align
+			h3 Subscribe to our newsletter
+			p Since working in the open is so important, we're planning to have a weekly newsletter. It will aggregate some of our project updates and content we'd like to share with you all.
+			.row
+				img.responsive-img(src='/images/team-working-together.jpg' alt="group picture of ddc team members")
+				.col.s6.input-field
+					input#email.validate(type='text')
+					label(for='email') Email Address
+				.col.s6
+					a.waves-effect.waves-light.btn subscribe
+
+		div#meet-the-team
+			h3 Meet the Team
+			p Our team is a variety! 
+			.row
+				.col.s12.m6.l4
+					.card.small
+						.card-image
+							img(src='images/pic01.jpg')
+							span.card-title This Person
+						.card-content
+							p
+								| I am a very simple card. I am good at containing small bits of information.
+								| I am convenient because I require little markup to use effectively.
+						.card-action
+							a(href='#') Social Medias
+				.col.s12.m6.l4
+					.card.small
+						.card-image
+							img(src='images/pic01.jpg')
+							span.card-title This Person
+						.card-content
+							p
+								| I am a very simple card. I am good at containing small bits of information.
+								| I am convenient because I require little markup to use effectively.
+						.card-action
+							a(href='#') Social Medias
+				.col.s12.m6.l4
+					.card.small
+						.card-image
+							img(src='images/pic01.jpg')
+							span.card-title This Person
+						.card-content
+							p
+								| I am a very simple card. I am good at containing small bits of information.
+								| I am convenient because I require little markup to use effectively.
+						.card-action
+							a(href='#') Social Medias
+				.col.s12.m6.l4
+					.card.small
+						.card-image
+							img(src='images/pic01.jpg')
+							span.card-title This Person
+						.card-content
+							p
+								| I am a very simple card. I am good at containing small bits of information.
+								| I am convenient because I require little markup to use effectively.
+						.card-action
+							a(href='#') Social Medias
+
+				.col.s12.m6.l4
+					.card.small
+						.card-image
+							img(src='images/pic01.jpg')
+							span.card-title This Person
+						.card-content
+							p
+								| I am a very simple card. I am good at containing small bits of information.
+								| I am convenient because I require little markup to use effectively.
+						.card-action
+							a(href='#') Social Medias
+
+				.col.s12.m6.l4
+					.card
+						.card-image
+							img(src='images/pic01.jpg')
+							span.card-title This Person
+						.card-content
+							p
+								| I am a very simple card. I am good at containing small bits of information.
+								| I am convenient because I require little markup to use effectively.
+						.card-action
+							a(href='#') Social Medias
+
+		div#events
+			h3 Events
+			p Sometimes we do special things! 
 
 
 
