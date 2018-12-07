@@ -6,22 +6,23 @@ html
 		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
 		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.5.0/css/all.css', integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU', crossorigin='anonymous')
 		link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Lato")
-		link(rel='stylesheet', href='/stylesheets/materialize.css')
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		link(rel='stylesheet', href='/stylesheets/style.css')
+
+		// MailerLite Universal
+		script.
+			(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+			var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+			f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+			var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+			_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+			var ml_account = ml('accounts', '1333026', 'y6o1n5a9c2', 'load');
 body
-	nav
-		.nav-wrapper
-			a.brand-logo(href='#') Logo
-			ul#nav-mobile.right.hide-on-med-and-down
-				li
-					a(href='#') Connect
-				li
-					a(href='#') Team
-				li
-					a(href='#') Newsletter
-				li
-					a(href='#') Events
-				li
-					a(href='#') Tumblr
 	block content
-		
+
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+script(src='/javascripts/script.js')
+
+
+
