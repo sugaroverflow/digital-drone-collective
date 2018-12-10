@@ -54,7 +54,7 @@ var people = [
 
 /* GET French home page. */
 router.get('/', function(req, res, next) {
-  res.render('french', { title: 'Digital Drone Collective', people:people, connections:connections});
+  res.render('french', { title: 'Digital Drone Collective', people:people});
 });
 
 module.exports = router;
