@@ -29,7 +29,7 @@ var people = [
         {
             "name": "WeiGuang Xiao",
             "position": "Developer",
-            "team": "CivAv Digital Services",
+            "team": "Civil Aviation Digital Services",
             "image":"./images/weiguang-headshot-bw.png",
             "twitter": "https://twitter.com/weiguang_xiao",
             "linkedIn":"https://www.linkedin.com/in/weiguang-xiao-39b11350/"
@@ -37,14 +37,14 @@ var people = [
         {
             "name": "Jeannie Stewart-Smith",
             "position": "Policy Advisor",
-            "team": "RPAS TF",
+            "team": "Remotely Piloted Aircraft Systems Task",
             "image":"./images/jeannie-headshot-bw.png",
             "twitter": "https://twitter.com/JeannieEva9",
             "linkedIn":"https://www.linkedin.com/in/jeannie-stewart-smith-00a54ab/"
         },
         {
             "name": "Olivier Bellehumeur-Génier",
-            "team": "RPAS TF",
+            "team": "Remotely Piloted Aircraft Systems Task",
             "image":"./images/olivier-headshot-bw.png",
             "position": "Safety Inspector",
             "linkedIn":"https://www.linkedin.com/in/olivier-bellehumeur-g%C3%A9nier-b5058b13b/"

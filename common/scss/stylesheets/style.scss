@@ -4,6 +4,15 @@ body {
 	font-family: 'Lato', sans-serif;
  }
 
+ .btn { 
+ 	background-color: #D15159;
+ 	border-radius: 4px;
+ 	&:hover { 
+ 		background-color: #E6838E;
+ 		transition: color .3s ease;
+ 	}
+ }
+
 #banner { 
 	background-color: #335075;
 	color: #ffffff;
@@ -20,6 +29,7 @@ body {
 
 .newsletter { 
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
@@ -37,7 +47,7 @@ body {
 		color: #1B3E66;
 	}
 	.card-action a {
-		color: #517A92 !important;
+		color: #E6838E !important;
 		&:hover { 
 			transition: color .3s ease;
 		}
