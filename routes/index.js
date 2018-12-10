@@ -7,41 +7,47 @@ var people = [
             "position": "User Experience (UX) Designer",
             "team": "Code for Canada",
             "image":"./images/andee-headshot-bw.png",
-            "twitter": "https://twitter.com/andeepittmanux"
+            "twitter": "https://twitter.com/andeepittmanux",
+            "linkedIn":"https://www.linkedin.com/in/andeepittman/"
         },
         {
             "name": "Jennifer Payne",
             "position": "Product Manager",
             "team": "Code for Canada",
             "image":"./images/jen-headshot-bw.png",
-            "twitter": "https://twitter.com/jnnfrpyn"
+            "twitter": "https://twitter.com/jnnfrpyn",
+            "linkedIn":""
         },
         {
             "name": "Fatima Sarah Khalid",
             "position": "Software Developer",
             "team": "Code for Canada",
             "image":"./images/fatima-headshot-bw.png",
-            "twitter": "https://twitter.com/sugaroverflow"
+            "twitter": "https://twitter.com/sugaroverflow",
+            "linkedIn":"https://www.linkedin.com/in/fatimasarahkhalid/"
         },
         {
             "name": "WeiGuang Xiao",
             "position": "Developer",
             "team": "CivAv Digital Services",
             "image":"./images/weiguang-headshot-bw.png",
-            "twitter": "https://twitter.com/weiguang_xiao"
+            "twitter": "https://twitter.com/weiguang_xiao",
+            "linkedIn":"https://www.linkedin.com/in/weiguang-xiao-39b11350/"
         },
         {
             "name": "Jeannie Stewart-Smith",
             "position": "Policy Advisor",
             "team": "RPAS TF",
             "image":"./images/jeannie-headshot-bw.png",
-            "twitter": "https://twitter.com/JeannieEva9"
+            "twitter": "https://twitter.com/JeannieEva9",
+            "linkedIn":"https://www.linkedin.com/in/jeannie-stewart-smith-00a54ab/"
         },
         {
             "name": "Olivier Bellehumeur-Génier",
             "team": "RPAS TF",
             "image":"./images/olivier-headshot-bw.png",
-            "position": "Safety Inspector"
+            "position": "Safety Inspector",
+            "linkedIn":"https://www.linkedin.com/in/olivier-bellehumeur-g%C3%A9nier-b5058b13b/"
         },
 ];
 

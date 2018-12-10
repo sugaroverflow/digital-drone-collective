@@ -67,18 +67,21 @@ block content
 									h5=person.name
 								h6=person.position
 								p=person.team
-							- if (person.twitter != null){
-								.card-action
-									a(href=person.twitter) Twitter
-							- }
-
+							.card-action
+								- if (person.twitter != null){
+										a(href=person.twitter) Twitter
+								- }
+								- if (person.linkedIn != null){
+										a(href=person.linkedIn) LinkedIn
+								- }
 								 
 
 
 	div.section.center-align
 		h3.section-title Subscribe to updates
 		.container
-			p.subtitle Since working in the open is so important, we're planning to have a weekly newsletter. It will aggregate some of our project updates and content we'd like to share with you all.
+			p.subtitle Since working in the open is so important, we're planning to have a weekly newsletter.
+			p.subtitle It will aggregate some of our project updates and content we'd like to share with you all.
 			.row.newsletter
 				.col.s12.m6.l6
 					img.responsive-img(src='/images/team-working-together.jpg' alt="group picture of ddc team members")
@@ -90,3 +93,8 @@ block content
 		h3.section-title Events
 		.container
 				img.responsive-img(src='/images/meet-the-ddc.png')
+
+	div.section.center-align.footer
+		span Digital Drone Collective 2018. All rights reserved.
+		br
+		span This website is an alpha | iteration 2.1.0
