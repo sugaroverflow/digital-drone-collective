@@ -1,0 +1,105 @@
+extends layout
+
+block content
+	
+	div.section#banner
+		.row
+			.col.s12
+				p Bienvenue dans
+					h2 le Collectif drone numérique
+	div.section.center-align
+		.container
+			.row
+				.col.s12.m6.l6
+					span.header-image
+						img.responsive-img(src='/images/groupshot--team.jpg' alt="group picture of ddc team members")
+				.col.s12.m6.l6
+					p.subtitle
+						| Nous sommes une coopération entre l’organisme Code for Canada (C4C), le groupe de travail sur les systèmes aéronefs télépilotés, ainsi que les services numériques de l’aviation civil de Transport Canada (CivAv). Nous sommes 
+						a(href='https://t.co/mILVPcYP5f') chargés de concevoir 
+						| des prototypes d’outils numériques permettant aux pilotes de drones de voler en toute sécurité et conformément aux nouvelles régulations.
+
+	div.section.center-align
+		h3.section-title Connectez-vous avec nous
+		.container
+			p.subtitle Nous croyons en un travail transparent et partagerons activement notre parcours avec vous.
+			.row
+				.col.s12.m12.l4
+					.card.center-align
+						.card-content
+							i.fas.fa-plane-departure.icon
+							h4 Suivez notre parcours
+							p Pour des mises à jour quotidiennes et possiblement des vidéos, suivez notre hashtag sur Twitter.
+						.card-action
+							a(href='https://twitter.com/search?q=%23DigitalDroneCollective')
+								button.waves-effect.waves-light.btn Suivez Parcours
+						
+				.col.s12.m12.l4
+					.card.center-align
+						.card-content
+							i.fas.fa-book-open.icon
+							h4 Lisez nos posts
+							p Pour des mises à jour périodiques sur le projet, des photos et possiblement des vidéos, consultez notre Tumblr.
+
+						.card-action
+							a(href='tumblr.digitaldronecollective.com')
+								button.waves-effect.waves-light.btn Consultez Tumblr
+
+				.col.s12.m12.l4
+					.card.center-align
+						.card-content
+							i.fas.fa-camera-retro.icon
+							h4 Voyez nos photos
+							p Consultez notre Flickr pour une histoire visuelle et une archive collective des photos de notre projet.
+
+						.card-action
+							a(href='https://www.flickr.com/photos/digitaldronecollective/')
+								button.waves-effect.waves-light.btn Voyez photos
+
+	div.section
+		h3.section-title.center-align Découvrez notre équipe
+		.container
+			.row.team-cards
+				each person, index in people
+					.col.s12.m6.l4
+						.card
+							.card-content
+								.card-image.headshot
+									img.responsive-img(src=person.image)
+								span.card-title
+									h5=person.name
+								h6=person.position
+								p=person.team
+							.card-action
+								- if (person.twitter != null){
+										a(href=person.twitter) Twitter
+								- }
+								- if (person.linkedIn != null){
+										a(href=person.linkedIn) LinkedIn
+								- }
+								 
+
+
+	div.section.center-align
+		h3.section-title Inscrivez-vous à notre bulletin d’information
+		.container
+			p.subtitle Puisqu’il est si important de travailler de manière transparente, nous prévoyons publier des bulletins d’informations hebdomadaires. Ils regrouperont du contenu et des mises à jour que nous aimerons partager avec vous. 
+
+			p.subtitle: Remarque notre bulletin d'information sera en anglais.
+			.row.newsletter
+				.col.s12.m6.l6
+					img.responsive-img(src='/images/team-working-together.jpg' alt="group picture of ddc team members")
+				.col.s12.m6.l6
+					.newsletter-form
+						.ml-form-embed(data-account='1333026:y6o1n5a9c2', data-form='1146974:t5a5m6')
+
+	div.section.center-align
+		h3.section-title Événements
+		.container
+				img.responsive-img(src='/images/meet-the-ddc-french.png')
+
+	div.section.center-align.footer
+		span Collectif drone numérique 2018 | version 2.1.0
+		br
+		span Ce site est un alpha. 
+			a(href='https://goo.gl/forms/nequO8yZHTME2qu73') Signaler un problème ou une erreur sur cette page.

@@ -4,7 +4,7 @@ var router = express.Router();
 var people = [
         {
             "name": "Andee Pittman",
-            "position": "User Experience (UX) Designer",
+            "position": "Concepteur d'expérience utilisateur",
             "team": "Code for Canada",
             "image":"./images/andee-headshot-bw.png",
             "twitter": "https://twitter.com/andeepittmanux",
@@ -12,7 +12,7 @@ var people = [
         },
         {
             "name": "Jennifer Payne",
-            "position": "Product Manager",
+            "position": "Chef de produit",
             "team": "Code for Canada",
             "image":"./images/jen-headshot-bw.png",
             "twitter": "https://twitter.com/jnnfrpyn",
@@ -20,7 +20,7 @@ var people = [
         },
         {
             "name": "Fatima Sarah Khalid",
-            "position": "Software Developer",
+            "position": "Développeur de logiciels",
             "team": "Code for Canada",
             "image":"./images/fatima-headshot-bw.png",
             "twitter": "https://twitter.com/sugaroverflow",
@@ -28,56 +28,33 @@ var people = [
         },
         {
             "name": "WeiGuang Xiao",
-            "position": "Developer",
-            "team": "Civil Aviation Digital Services",
+            "position": "Développeur de logiciels",
+            "team": "les Services numériques de l’aviation civil",
             "image":"./images/weiguang-headshot-bw.png",
             "twitter": "https://twitter.com/weiguang_xiao",
             "linkedIn":"https://www.linkedin.com/in/weiguang-xiao-39b11350/"
         },
         {
             "name": "Jeannie Stewart-Smith",
-            "position": "Policy Advisor",
-            "team": "Remotely Piloted Aircraft Systems Task Force",
+            "position": "Conseiller politique",
+            "team": "le Groupe de travail sur les systèmes aéronefs télépilotés",
             "image":"./images/jeannie-headshot-bw.png",
             "twitter": "https://twitter.com/JeannieEva9",
             "linkedIn":"https://www.linkedin.com/in/jeannie-stewart-smith-00a54ab/"
         },
         {
             "name": "Olivier Bellehumeur-Génier",
-            "team": "Remotely Piloted Aircraft Systems Task Force",
+            "team": "le Groupe de travail sur les systèmes aéronefs télépilotés",
             "image":"./images/olivier-headshot-bw.png",
-            "position": "Safety Inspector",
+            "position": "Inspecteur de la sécurité",
             "linkedIn":"https://www.linkedin.com/in/olivier-bellehumeur-g%C3%A9nier-b5058b13b/"
         },
 ];
 
-var connections = [
-    {
-        "icon": "fas.fa-plane-departure",
-        "title": "Follow our journey",
-        "subtitle": "For daily updates, photos, and possibly some videos, check out our Tumblr.",
-        "link":"http://tumblr.digitaldronecollective.com/",
-        "button": "Follow"
-    },
-    {
-        "icon": "fas.fa-book-open",
-        "title": "Read our blogs",
-        "subtitle": "For long form, periodic updates on the project, read the Code for Canada blog.",
-        "link":"https://medium.com/code-for-canada/",
-        "button": "Read"
-    },
-    {
-        "icon": "fas.fa-camera-retro",
-        "title": "See our photos",
-        "subtitle": "Check out our Flickr for a visual story of our project",
-        "link":"http://tumblr.digitaldronecollective.com/",
-        "button": "See"
-    }
-];
 
-/* GET home page. */
+/* GET French home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Digital Drone Collective', people:people, connections:connections});
+  res.render('french', { title: 'Digital Drone Collective', people:people, connections:connections});
 });
 
 module.exports = router;
