@@ -1,7 +1,7 @@
 DDC Landing page
 ==================
 
-Source code example for digitaldronecollective.com - a nodejs site built with [expressjs](https://github.com/expressjs/express), [pug](https://pugjs.org), and [materializecss](https://materializecss.com and deployed to Azure cloud services. 
+Source code example for digitaldronecollective.com - a nodejs site built with [expressjs](https://github.com/expressjs/express), [pug](https://pugjs.org), and [materializecss](https://materializecss.com) and deployed to Azure cloud services. 
 
 Build
 -----
