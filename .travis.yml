@@ -1,0 +1,5 @@
+deploy:
+  provider: azure_web_apps
+  slot: droneforce-development
+  on: develop
+  skip_cleanup: true
