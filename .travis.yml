@@ -1,5 +1,14 @@
+language: node_js
+node_js: stable
+install:
+  - npm cache clean
+  - npm install
+script:
+  - npm run test
+  - npm run build
+
 deploy:
-  provider: azure_web_apps
-  slot: droneforce-development
-  on: develop
-  skip_cleanup: true
+  - provider: azure_web_apps
+  - slot: droneforce-development
+  - on: develop
+  - skip_cleanup: true
