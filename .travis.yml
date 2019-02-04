@@ -5,7 +5,6 @@ install:
 
 deploy:
   - provider: azure_web_apps
-  - slot: droneforce-development
-  - on:
-     branch: develop
-  - skip_cleanup: true
+    slot: droneforce-development
+    on:
+      branch: develop
