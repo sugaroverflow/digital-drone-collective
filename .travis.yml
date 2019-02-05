@@ -8,3 +8,5 @@ deploy:
     slot: droneforce-development
     on:
       branch: develop
+
+after_deploy: npm rebuild node-sass
