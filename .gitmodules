@@ -1,0 +1,9 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/GCweb"]
+	path = themes/GCweb
+	url = git@github.com:wet-boew/GCWeb.git
+[submodule "themes/wet-boew-hugo"]
+	path = themes/wet-boew-hugo
+	url = git@github.com:wet-boew/wet-boew-hugo.git

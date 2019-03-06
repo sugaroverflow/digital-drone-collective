@@ -1,0 +1,4 @@
+baseURL = "http://digitaldronecollective.com"
+languageCode = "en-us"
+title = "Digital Drone Collective"
+theme = "wet-boew-hugo"

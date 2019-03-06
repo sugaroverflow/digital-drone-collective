@@ -1,12 +1,12 @@
-language: node_js
-node_js: stable
-install:
-  - npm install
+# language: node_js
+# node_js: stable
+# install:
+#   - npm install
 
-deploy:
-  - provider: azure_web_apps
-    slot: droneforce-development
-    on:
-      branch: develop
+# deploy:
+#   - provider: azure_web_apps
+#     slot: droneforce-development
+#     on:
+#       branch: develop
 
-after_deploy: npm rebuild node-sass
+# after_deploy: npm rebuild node-sass
